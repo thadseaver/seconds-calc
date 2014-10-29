@@ -10,13 +10,14 @@
     </head>
     <body>
     	<h1>Convert hours, minutes, and seconds to seconds</h1>
-        <form>
-            Hours: <input type="text" name="hours" /><br />
-            Minutes: <input type="text" name="minutes" /><br />
-            Seconds: <input type="text" name="seconds" /><br />
-            <input type="submit" value="Convert" />
+        <form id="form">
+            <p><label>Hours: <input id="hours" type="text" name="hours"></label></p>
+            <p><label>Minutes: <input id="minutes" type="text" name="minutes"></label></p>
+            <p><label>Seconds: <input id="seconds" type="text" name="seconds"></label></p>
+            <p><button id="convert">Convert</button></p>
+            <p><input type="reset" id="reset"></p>
         </form>
-        <p class="answer"></p>
+        <div id="total"></div>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
